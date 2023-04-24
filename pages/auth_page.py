@@ -9,7 +9,7 @@ class AuthLocators:
     AUTH_PASS = (By.ID, "password")
     AUTH_SUBMIT_BTN = (By.ID, "kc-login")
     ERROR_MESSAGE = (By.CSS_SELECTOR, '[data-error="Неверный логин или пароль"]')
-    FAILED_CAPTCHA_MESSAGE = (By.CSS_SELECTOR, '[data-error="Неверно введен текст с картинки"]')
+    FAILED_CAPTCHA_MESSAGE = (By.ID, "form-error-message")
     CAPTCHA_IMAGE = (By.CSS_SELECTOR, '.rt-captcha__image')
     PHONE_TAB = (By.ID, 't-btn-tab-phone')
     EMAIL_TAB = (By.ID, 't-btn-tab-mail')
@@ -22,6 +22,8 @@ class AuthLocators:
     REG_LINK = (By.ID, 'kc-register')
     AUTH_PAGE_TITLE = (By.CLASS_NAME, 'card-container__title')
     USER_AVATAR = (By.CLASS_NAME, 'user-avatar')
+    FORGOT_PASS = (By.ID, "forgot_password")
+    RESET_BTN = (By.ID, "reset")
 
 
 class AuthPage(BasePage):

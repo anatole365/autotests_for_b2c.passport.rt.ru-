@@ -5,5 +5,3 @@ valid_password = 'balagaN_35'
 invalid_password = 'balagaN_00'
 first_name = 'Глафира'
 last_name = 'Потапова'
-
-auth_page_title = 'Ростелеком ID'

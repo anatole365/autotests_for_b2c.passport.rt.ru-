@@ -1,6 +1,5 @@
 from selenium.webdriver.support.ui import WebDriverWait as Wait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 
 class BasePage:
@@ -11,7 +10,6 @@ class BasePage:
 
     def page_refresh(self):
         self.driver.refresh()
-
 
     def find_is_visible(self, locator, timeout=5):
         return Wait(self.driver, timeout).until(EC.visibility_of_element_located(locator))
@@ -27,6 +25,3 @@ class BasePage:
 
     def scroll_into_view(self, element):
         self.driver.execute_script("return arguments[0].scrollIntoView(true);", element)
-
-
-
