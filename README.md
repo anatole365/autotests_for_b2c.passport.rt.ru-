@@ -10,7 +10,7 @@ https://b2c.passport.rt.ru
   test_auth_positive.py: позитивные тесты формы авторизации;
   test_auth_negative.py: негативные тесты формы авторизации.
   
-  Файл requirements.txt содержит установленные библиотеки.
-  Файл settings.py содержит регистрационные данные.
+Файл requirements.txt содержит установленные библиотеки.
+Файл settings.py содержит регистрационные данные.
   
   
